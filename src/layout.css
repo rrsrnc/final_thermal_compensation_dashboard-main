@@ -1,0 +1,99 @@
+/* container design */
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  display: flex;
+  position: relative;
+  top: 10;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  border-right: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out;
+  transform: perspective(800px) rotateY(0deg);
+}
+.sidebar.closed {
+  transform: perspective(800px) rotateY(-30deg);
+}
+
+/* .mainArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: initial;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+} */
+
+.mainArea {
+  width: 100%;
+
+  /* display: grid;
+  grid-template-columns: auto;
+  justify-content: center; */
+}
+
+.links a {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  width: auto;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+}
+
+.links a:hover {
+  background: hsl(210, 36%, 96%);
+  color: rgb(28, 28, 101);
+}
+.active span,
+svg {
+  /* background: hsl(210, 36%, 96%);
+  color: rgb(28, 28, 101); */
+  color: black;
+  margin-left: 7px;
+}
+
+.heading {
+  margin-top: 5px;
+  font-size: 1.75rem;
+}
+
+/* Toggle button */
+
+.sidebarTitle {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  line-height: 1.25;
+  font-size: 1.8em;
+}
+.crossIcon {
+  cursor: pointer;
+  margin-left: 45px;
+  color: red;
+}
+
+.linkText,
+.dashboard {
+  display: none;
+}
+.linkTexts {
+  z-index: 1000;
+}
