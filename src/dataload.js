@@ -29,7 +29,7 @@ function Dataload(props) {
         // console.log(`${window.location.origin}/api/v1/download?date=${convertedDate}`);
         const response = await fetch(
           
-          `http://localhost:5010/api/v1/download?date=${convertedDate}`,
+          `http://54.160.182.68:5010/api/v1/download?date=${convertedDate}`,
           // `${window.location.origin}/api/v1/download?date=${convertedDate}`,
           {
             method: "GET",
