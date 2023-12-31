@@ -16,8 +16,8 @@ import Document from './documents.js'
 import { Login,Signup } from './authForm.js'
 
 // const socket = io.connect("https://iotd.onrender.com/");
-// const socket = io.connect("http://34.228.54.28:5010/");
-const socket = io.connect("http://localhost:5010/");
+const socket = io.connect("http://54.160.182.68:5010/");
+// const socket = io.connect("http://localhost:5010/");
 
 
 // const socket = io.connect(window.location.origin);
@@ -64,7 +64,7 @@ function App() {
   },[]);
   return (
     // <BrowserRouter basename="/client">
-    <BrowserRouter>
+    <BrowserRouter basename="/" >
       <Routes>
         {/* <Route path="/" element={<main><Sidebar/><Home/></main>}/> */}
         <Route path="/" element={<Layout connect={socket}/>}>
