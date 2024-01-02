@@ -16,7 +16,7 @@ import Document from './documents.js'
 import { Login,Signup } from './authForm.js'
 
 // const socket = io.connect("https://iotd.onrender.com/");
-const socket = io.connect("http://3.7.109.95:5010/");
+const socket = io.connect("http://44.222.43.151:5010/");
 // const socket = io.connect("http://localhost:5010/");
 
 
